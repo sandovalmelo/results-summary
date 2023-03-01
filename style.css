@@ -1,3 +1,31 @@
+@font-face {
+	font-family: "Hanken Grotesk";
+	src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Hanken Grotesk";
+	src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf");
+	font-weight: medium;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Hanken Grotesk";
+	src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Hanken Grotesk";
+	src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf");
+	font-weight: 800;
+	font-style: normal;
+}
+
 :root {
 	/* gradients */
 	--slate-blue: hsl(252, 100%, 67%);
@@ -16,4 +44,8 @@
 	--orangey-yellow: hsl(39, 100%, 56%);
 	--green-teal: hsl(166, 100%, 37%);
 	--cobalt-blue: hsl(234, 85%, 45%);
+}
+
+body {
+	font-family: "Hanken Grotesk";
 }
