@@ -87,7 +87,7 @@ ul {
 	font-size: 1rem;
 }
 
-.score {
+.score-box {
 	margin: 1.5rem 0;
 	width: 10rem;
 	height: 10rem;
@@ -98,7 +98,7 @@ ul {
 	background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
 }
 
-.score span {
+.score {
 	display: block;
 	font-size: 3.5rem;
 	font-weight: bold;

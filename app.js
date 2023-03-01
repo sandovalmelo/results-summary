@@ -1,4 +1,5 @@
 const summaryList = document.querySelector(".summary-list");
+const score = document.querySelector(".score");
 
 fetch("./data.json")
 	.then((res) => res.json())
@@ -6,6 +7,7 @@ fetch("./data.json")
 		console.log(data);
 
 		data.forEach((data) => {
+			console.log(data.score);
 			const summaryElement = document.createElement("li");
 			summaryElement.className = `summary-element ${data.category.toLowerCase()}`;
 			summaryList.appendChild(summaryElement);
@@ -30,4 +32,10 @@ fetch("./data.json")
 			summaryRatings.innerHTML = `<span>${data.score}</span> / 100`;
 			summaryElement.appendChild(summaryRatings);
 		});
+
+		const total = parseInt(
+			data.reduce((acc, cur) => acc + cur.score, 0) / data.length
+		);
+
+		score.innerText = total;
 	});
