@@ -55,6 +55,8 @@
 	--orangey-yellow: hsl(39, 100%, 56%);
 	--green-teal: hsl(166, 100%, 37%);
 	--cobalt-blue: hsl(234, 85%, 45%);
+
+	--card-radius: 30px;
 }
 
 body {
@@ -66,14 +68,19 @@ ul {
 	list-style: none;
 }
 
+.card-component {
+	background-color: var(--white);
+	margin: 0 auto;
+}
+
 /* Result */
 .result {
 	background-image: linear-gradient(var(--slate-blue), var(--royal-blue));
 	color: var(--light-lavender);
 	text-align: center;
 	padding: 2rem;
-	border-end-start-radius: 30px;
-	border-end-end-radius: 30px;
+	border-end-start-radius: var(--card-radius);
+	border-end-end-radius: var(--card-radius);
 }
 
 .result h2 {
@@ -189,6 +196,19 @@ button {
 	border-radius: 50px;
 }
 
+/* Medium Screens */
+@media (min-width: 400px) {
+	body {
+		padding: 2rem;
+	}
+
+	.card-component {
+		max-width: 480px;
+		border-radius: var(--card-radius);
+		overflow: hidden;
+	}
+}
+
 /* Large Screens */
 @media (min-width: 900px) {
 	body {
@@ -202,12 +222,12 @@ button {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: var(--white);
+		margin: 0;
 	}
 
 	.result {
-		border-start-start-radius: 30px;
-		border-start-end-radius: 30px;
+		border-start-start-radius: var(--card-radius);
+		border-start-end-radius: var(--card-radius);
 	}
 
 	.summary {
