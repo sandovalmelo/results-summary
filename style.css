@@ -62,6 +62,11 @@ body {
 	background-color: var(--pale-blue);
 }
 
+ul {
+	list-style: none;
+}
+
+/* Result */
 .result {
 	background-image: linear-gradient(var(--slate-blue), var(--royal-blue));
 	color: var(--light-lavender);
@@ -97,4 +102,87 @@ body {
 	color: var(--white);
 	margin-bottom: 1rem;
 	font-size: 1.25rem;
+}
+
+/* Summary */
+.summary {
+	padding: 1.5rem;
+}
+
+.summary h2 {
+	font-size: 1rem;
+	color: var(--dark-gray-blue);
+}
+
+.summary-list {
+	margin-bottom: 1rem;
+}
+
+.summary-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.25rem;
+}
+
+.summary-element {
+	padding: 0.75rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 0.75rem;
+	border-radius: 8px;
+}
+
+.summary-element.reaction {
+	background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.reaction .summary-info {
+	color: var(--light-red);
+}
+
+.summary-element.memory {
+	background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.memory .summary-info {
+	color: var(--orangey-yellow);
+}
+
+.summary-element.verbal {
+	background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.verbal .summary-info {
+	color: var(--green-teal);
+}
+
+.summary-element.visual {
+	background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.visual .summary-info {
+	color: var(--cobalt-blue);
+}
+
+.summary-ratings {
+	color: hsla(224, 30%, 27%, 0.5);
+	font-weight: bold;
+}
+
+.summary-ratings span {
+	color: var(--dark-gray-blue);
+}
+
+button {
+	background-color: var(--dark-gray-blue);
+	display: block;
+	width: 100%;
+	padding: 1rem 0;
+	border: none;
+	color: var(--white);
+	font-weight: bold;
+	font-size: 1rem;
+	border-radius: 50px;
 }
