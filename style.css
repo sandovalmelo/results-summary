@@ -1,3 +1,4 @@
+/* Font */
 @font-face {
 	font-family: "Hanken Grotesk";
 	src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
@@ -26,10 +27,20 @@
 	font-style: normal;
 }
 
+/* Reset */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Variables */
 :root {
 	/* gradients */
 	--slate-blue: hsl(252, 100%, 67%);
-	--light-royal-blue: hsl(241, 81%, 54%);
+	--royal-blue: hsl(241, 81%, 54%);
 	--violet-blue: hsla(256, 72%, 46%, 1);
 	--persian-blue: hsla(241, 72%, 46%, 0);
 
@@ -48,4 +59,42 @@
 
 body {
 	font-family: "Hanken Grotesk";
+	background-color: var(--pale-blue);
+}
+
+.result {
+	background-image: linear-gradient(var(--slate-blue), var(--royal-blue));
+	color: var(--light-lavender);
+	text-align: center;
+	padding: 2rem;
+	border-end-start-radius: 30px;
+	border-end-end-radius: 30px;
+}
+
+.result h2 {
+	font-size: 1rem;
+}
+
+.score {
+	margin: 1.5rem 0;
+	width: 10rem;
+	height: 10rem;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(var(--violet-blue), var(--persian-blue));
+}
+
+.score span {
+	display: block;
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: var(--white);
+}
+
+.rating h3 {
+	color: var(--white);
+	margin-bottom: 1rem;
+	font-size: 1.25rem;
 }
