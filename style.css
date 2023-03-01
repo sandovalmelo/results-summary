@@ -107,22 +107,24 @@ ul {
 /* Summary */
 .summary {
 	padding: 1.5rem;
+	background-color: var(--white);
 }
 
 .summary h2 {
-	font-size: 1rem;
+	font-size: 1.15rem;
 	color: var(--dark-gray-blue);
+	font-weight: 800;
 }
 
 .summary-list {
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 .summary-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	gap: 0.25rem;
+	gap: 1rem;
 }
 
 .summary-element {
@@ -130,7 +132,7 @@ ul {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-top: 0.75rem;
+	margin-top: 1rem;
 	border-radius: 8px;
 }
 
@@ -185,4 +187,31 @@ button {
 	font-weight: bold;
 	font-size: 1rem;
 	border-radius: 50px;
+}
+
+/* Large Screens */
+@media (min-width: 900px) {
+	body {
+		display: grid;
+		place-items: center;
+		height: 100vh;
+	}
+
+	.card-component {
+		max-width: 600px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: var(--white);
+	}
+
+	.result {
+		border-start-start-radius: 30px;
+		border-start-end-radius: 30px;
+	}
+
+	.summary {
+		max-width: 700px;
+		width: 100%;
+	}
 }
