@@ -206,6 +206,7 @@ button {
 		max-width: 480px;
 		border-radius: var(--card-radius);
 		overflow: hidden;
+		box-shadow: var(--light-lavender) 0px 5px 15px;
 	}
 }
 
