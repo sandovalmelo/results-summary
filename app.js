@@ -21,7 +21,7 @@ async function getItems() {
 		img.setAttribute("alt", `${data_2.category} icon`);
 		summaryItem.appendChild(img);
 
-		const summaryInfo = document.createElement("p");
+		const summaryInfo = document.createElement("span");
 		summaryInfo.innerText = data_2.category;
 		summaryInfo.className = "summary-info";
 		summaryItem.appendChild(summaryInfo);
